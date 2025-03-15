@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title> اسهم الاردن
+    </title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -26,8 +27,8 @@
 
 <body class="overflow-x-hidden">
 
-    <nav class="bg-white shadow-lg z-[99999999999999999] sticky top-0  transition-all duration-300">
-       
+    <nav class="bg-white shadow-lg z-[99999999999] sticky top-0  transition-all duration-300">
+
         <div class="hidden lg:flex mx-auto px-6 py-4 flex-col gap-5">
             <div class="w-full h-[50px] flex justify-between items-center">
                 <div>
@@ -55,7 +56,8 @@
                     </button>
 
                     <!-- Register Button -->
-                    <button class="border-green-800 border-2 bg-transparent text-black font-semibold px-6 py-2 rounded-full 
+                    <button
+                        class="border-green-800 border-2 bg-transparent text-black font-semibold px-6 py-2 rounded-full 
                         transition-all duration-300 ease-in-out hover:bg-green-800 hover:text-white">
                         إنشاء حساب
                     </button>
@@ -66,7 +68,8 @@
                             class="rounded-full border-green-800 border-2 w-full p-2 pl-10 focus:outline-none text-right 
                             transition-all duration-300 ease-in-out focus:ring-2 focus:ring-green-500 focus:border-green-600"
                             placeholder="ابحث عن..." type="search">
-                        <i class="fa-solid fa-magnifying-glass text-white text-xl p-2 rounded-full bg-green-800 
+                        <i
+                            class="fa-solid fa-magnifying-glass text-white text-xl p-2 rounded-full bg-green-800 
                             absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer 
                             transition-all duration-300 ease-in-out hover:bg-green-700">
                         </i>
@@ -220,16 +223,17 @@
             </div>
         </div>
 
-        
+
         <div class="lg:hidden">
             <div class="flex justify-between items-center px-4 py-3 border-b">
-              
+
                 <div class="flex-1 text-center">
                     <a href="#" class="inline-block">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" dir="rtl"
                             class="w-[200px] h-auto">
                             <defs>
-                                <pattern id="mobileImagePattern" patternUnits="userSpaceOnUse" width="800" height="200">
+                                <pattern id="mobileImagePattern" patternUnits="userSpaceOnUse" width="800"
+                                    height="200">
                                     <image href="{{ asset('images/w2.webp') }}" width="800" height="140" />
                                 </pattern>
                             </defs>
@@ -241,7 +245,7 @@
                     </a>
                 </div>
 
-         
+
                 <button id="menuToggle" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-800">
                     <div class="w-6 h-0.5 bg-green-800 transition-all duration-300" id="line1"></div>
                     <div class="w-6 h-0.5 bg-green-800 my-1.5 transition-all duration-300" id="line2"></div>
@@ -249,14 +253,15 @@
                 </button>
             </div>
 
-          
+
             <div class="px-4 py-3 border-b">
                 <div class="relative">
                     <input
                         class="rounded-full border-green-800 border-2 w-full p-2 pl-10 focus:outline-none text-right 
                         transition-all duration-300 ease-in-out focus:ring-2 focus:ring-green-500 focus:border-green-600"
                         placeholder="ابحث عن..." type="search">
-                    <i class="fa-solid fa-magnifying-glass text-white text-xl p-2 rounded-full bg-green-800 
+                    <i
+                        class="fa-solid fa-magnifying-glass text-white text-xl p-2 rounded-full bg-green-800 
                         absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer 
                         transition-all duration-300 ease-in-out hover:bg-green-700">
                     </i>
@@ -267,11 +272,13 @@
             <div id="mobileMenu" class="transition-all duration-300 ease-in-out overflow-hidden max-h-0">
                 <!-- Login/Register buttons for mobile -->
                 <div class="flex justify-between gap-2 p-4 border-b">
-                    <button class="flex-1 bg-green-800 px-4 py-2 border-green-800 rounded-full text-white 
+                    <button
+                        class="flex-1 bg-green-800 px-4 py-2 border-green-800 rounded-full text-white 
                         transition-all font-semibold duration-300 ease-in-out hover:bg-green-900 border-2 text-sm">
                         تسجيل الدخول
                     </button>
-                    <button class="flex-1 border-green-800 border-2 bg-transparent text-black font-semibold px-4 py-2 rounded-full 
+                    <button
+                        class="flex-1 border-green-800 border-2 bg-transparent text-black font-semibold px-4 py-2 rounded-full 
                         transition-all duration-300 ease-in-out hover:bg-green-800 hover:text-white text-sm">
                         إنشاء حساب
                     </button>
@@ -323,7 +330,7 @@
                     </div>
 
                     <!-- Financial Data -->
-                    <div class="border-b">
+                    <div class="border-b px-3">
                         <button
                             class="dropdown-toggle flex justify-between items-center w-full px-4 py-3 text-right font-semibold"
                             data-target="financialDropdown">
@@ -464,7 +471,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        
+
             const menuToggle = document.getElementById('menuToggle');
             const mobileMenu = document.getElementById('mobileMenu');
             const line1 = document.getElementById('line1');
@@ -474,10 +481,10 @@
 
             menuToggle.addEventListener('click', function() {
                 isMenuOpen = !isMenuOpen;
-                
+
                 if (isMenuOpen) {
                     mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
-  
+
                     line1.classList.add('transform', 'rotate-45', 'translate-y-2');
                     line2.classList.add('opacity-0');
                     line3.classList.add('transform', '-rotate-45', '-translate-y-2');
@@ -492,24 +499,26 @@
 
 
             const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-            
+
             dropdownToggles.forEach(toggle => {
                 toggle.addEventListener('click', function() {
                     const targetId = this.getAttribute('data-target');
                     const dropdownContent = document.getElementById(targetId);
                     const icon = this.querySelector('i');
-                    
+
 
                     document.querySelectorAll('.dropdown-content').forEach(content => {
                         if (content.id !== targetId && content.style.maxHeight !== '0px') {
                             content.style.maxHeight = '0';
-                            const otherIcon = document.querySelector(`[data-target="${content.id}"] i`);
+                            const otherIcon = document.querySelector(
+                                `[data-target="${content.id}"] i`);
                             otherIcon.classList.remove('transform', 'rotate-180');
                         }
                     });
-                    
 
-                    if (dropdownContent.style.maxHeight === '0px' || !dropdownContent.style.maxHeight) {
+
+                    if (dropdownContent.style.maxHeight === '0px' || !dropdownContent.style
+                        .maxHeight) {
                         dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
                         icon.classList.add('transform', 'rotate-180');
                     } else {
@@ -556,19 +565,23 @@
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
                         <div class="swiper-slide flex justify-center items-center">
-                            <img src="{{ asset('images/jord.jpg') }}" class="h-full w-full object-cover" alt="">
+                            <img src="{{ asset('images/jord.jpg') }}" class="h-full w-full object-cover"
+                                alt="">
                         </div>
                         <!-- Slide 2 -->
                         <div class="swiper-slide flex justify-center items-center">
-                            <img src="{{ asset('images/jorr.jpg') }}" class="h-full w-full object-cover" alt="">
+                            <img src="{{ asset('images/jorr.jpg') }}" class="h-full w-full object-cover"
+                                alt="">
                         </div>
                         <!-- Slide 3 -->
                         <div class="swiper-slide flex justify-center items-center">
-                            <img src="{{ asset('images/jorr3.jpg') }}" class="h-full w-full object-cover" alt="">
+                            <img src="{{ asset('images/jorr3.jpg') }}" class="h-full w-full object-cover"
+                                alt="">
                         </div>
                         <!-- Slide 4 -->
                         <div class="swiper-slide flex justify-center items-center">
-                            <img src="{{ asset('images/busniss.webp') }}" class="h-full w-full object-cover" alt="">
+                            <img src="{{ asset('images/busniss.webp') }}" class="h-full w-full object-cover"
+                                alt="">
                         </div>
                     </div>
 
@@ -583,7 +596,7 @@
 
             <!-- Swiper Configuration -->
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
+                document.addEventListener("DOMContentLoaded", function() {
                     var swiper = new Swiper(".swiper-container", {
                         loop: true, // Enables infinite loop
                         autoplay: {
@@ -593,7 +606,7 @@
                         slidesPerView: 1, // Always show one slide at a time
                         spaceBetween: 10, // Adds some spacing
                         pagination: {
-                            
+
                             clickable: true,
                         },
                         navigation: {
@@ -674,7 +687,8 @@
 
         <div class="flex flex-col gap-5 justify-center items-center ">
             <div class="w-[90%] flex justify-start ">
-                <div class="w-[150px]  flex justify-center items-center py-2 rounded-4xl bg-green-800 text-white">صناديق
+                <div class="w-[150px]  flex justify-center items-center py-2 rounded-4xl bg-green-800 text-white">
+                    صناديق
                     الاستثمار
                 </div>
             </div>
@@ -684,7 +698,7 @@
                     <div class="img1 w-full h-full"></div>
                 </div>
                 <div class="h-[40vh] lg:w-[59vw] w-[100vw] lg:rounded-lg overflow-auto bg-white shadow-lg">
-                    <div class="overflow-x-auto">
+                    <div class="overflow-x-auto flex justify-center">
                         <table dir="rtl"
                             class="w-max lg:w-full h-full text-right table-auto border-separate border-spacing-0 lg:rounded-lg overflow-hidden shadow-lg">
                             <thead class="bg-gradient-to-r from-green-800 to-green-600 text-white text-xs sm:text-sm">
@@ -698,7 +712,8 @@
                             </thead>
                             <tbody class="text-xs sm:text-sm">
                                 <tr class="hover:bg-green-50 transition-all cursor-pointer">
-                                    <td class="px-4 py-2 sm:px-6 sm:py-4 text-gray-800">صندوق الأهلي للأسهم الصينية</td>
+                                    <td class="px-4 py-2 sm:px-6 sm:py-4 text-gray-800">صندوق الأهلي للأسهم الصينية
+                                    </td>
                                     <td class="px-4 py-2 sm:px-6 sm:py-4 text-gray-800">6,494,183.00</td>
                                     <td class="px-4 py-2 sm:px-6 sm:py-4 text-gray-800">دولار</td>
                                     <td class="px-4 py-2 sm:px-6 sm:py-4 text-gray-800">16.14%</td>
@@ -770,21 +785,24 @@
                         <div class="gradd w-full h-[40%] rounded-lg flex justify-center items-center"><i
                                 class="text-5xl text-white fa-solid fa-chart-line"></i></div>
                         <div class="font-thin text-gray-500 text-lg ">9 مارس 2025</div>
-                        <h1 class="text-xl text-gray-600 font-semibold truncate-multiline">ارتفاع أسعار الذهب وسط توترات
+                        <h1 class="text-xl text-gray-600 font-semibold truncate-multiline">ارتفاع أسعار الذهب وسط
+                            توترات
                             عالمية في الأسواق المالية وتوقعات بتأثيرات طويلة الأمد</h1>
                     </div>
                     <div class="h-[15rem] lg:w-[20%] w-[24rem] rounded-lg">
                         <div class="gradd w-full h-[40%] rounded-lg flex justify-center items-center"><i
                                 class="text-5xl text-white fa-solid fa-chart-line"></i></div>
                         <div class="font-thin text-gray-500 text-lg ">8 مارس 2025</div>
-                        <h1 class="text-xl text-gray-600 font-semibold truncate-multiline">أسواق النفط تواجه تقلبات بسبب
+                        <h1 class="text-xl text-gray-600 font-semibold truncate-multiline">أسواق النفط تواجه تقلبات
+                            بسبب
                             الأزمة في الشرق الأوسط وتأثيرات على الاقتصاد العالمي</h1>
                     </div>
                     <div class="h-[15rem] lg:w-[20%] w-[24rem] rounded-lg">
                         <div class="gradd w-full h-[40%] rounded-lg flex justify-center items-center"><i
                                 class="text-5xl text-white fa-solid fa-chart-line"></i></div>
                         <div class="font-thin text-gray-500 text-lg ">7 مارس 2025</div>
-                        <h1 class="text-xl text-gray-600 font-semibold truncate-multiline">الأسواق الأوروبية تشهد صعودًا
+                        <h1 class="text-xl text-gray-600 font-semibold truncate-multiline">الأسواق الأوروبية تشهد
+                            صعودًا
                             بعد إعلان بيانات اقتصادية إيجابية وتوقعات نمو مستدامة</h1>
                     </div>
                     <div class="h-[15rem] lg:w-[20%] w-[24rem] rounded-lg">
@@ -904,7 +922,7 @@
 
 
     @if (Route::has('login'))
-    <div class="h-14.5 hidden lg:block"></div>
+        <div class="h-14.5 hidden lg:block"></div>
     @endif
 </body>
 
